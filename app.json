@@ -5,7 +5,10 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "aonu",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -13,9 +16,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fread.aonu"
     },
     "android": {
+      "package": "com.fread.aonu",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -29,8 +34,14 @@
     "plugins": [
       "expo-router"
     ],
-    "experiments": {
-      "typedRoutes": true
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/629995f5-8735-4a4a-993d-b77122b42305"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "629995f5-8735-4a4a-993d-b77122b42305"
+      }
     }
   }
 }
